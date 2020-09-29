@@ -1,7 +1,7 @@
 import json
 import re
 
-from token_validation import get_user_guid, validate_jwt, InvalidAuthorizationToken
+from .token_validation import get_user_guid, validate_jwt, InvalidAuthorizationToken
 from jwt.exceptions import ExpiredSignatureError, MissingRequiredClaimError, InvalidSignatureError
 from webob import Request, Response
 
